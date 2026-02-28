@@ -7,17 +7,19 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimail-member</name>
     <description>gulimail-member</description>
+    <packaging>jar</packaging>
+
     <parent>
         <groupId>com.gulimail</groupId>
         <artifactId>gulimail</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <spring-cloud.version>2022.0.0-RC2</spring-cloud.version>
     </properties>
     <dependencies>
         <dependency>
@@ -25,7 +27,6 @@
             <artifactId>gulimail-common</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -45,7 +46,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.atguigu.gulimail.product.GulimailProductApplication</mainClass>
+                    <mainClass>com.atguigu.gulimail.member.GulimailMemberApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>
